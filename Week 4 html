@@ -1,0 +1,36 @@
+<!--Zachary Hastings-->
+<html>
+    <!--script links the .js page to the html-->
+    <script src="CheckCreds.js"></script>
+<!--linking the .css to the html-->
+    <link href="loginpage.css" rel="stylesheet" type="text/css" />
+    <head>
+        <!--title of page that show in the tab bar-->
+        <title>UAT Space Login</title>
+        <br>
+        <img src="UATspaceLogo.jpg">
+        
+    </head>
+
+    <body>
+        <h1>
+            <!--tile on the page-->
+            UAT Space Login
+        </h1>
+        <br>
+        <p id="UATlogin" class="loginID">Please Login</p>
+        <br>
+        <!--form gives us the option to code in inputs-->
+        <form id="credSubmit" onsubmit="return false">
+            <!--input type for the user-->
+           First Name:     <input type="text" id="firstname" /> <br>
+           <!--second input that will be used in the js-->
+            Last Name:      <input type="text" id="lastname" /> <br>
+            <!--third input that will be used in the js -->
+            ID Badge:   <input type="number" id="badgeID" /> <br>
+            <!--on click is tell the html to run the java script that was linked-->
+            <input type="submit" onclick="checkCreds()" />
+        </form>
+    </body>
+
+</html>
