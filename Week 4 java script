@@ -1,0 +1,25 @@
+function checkCreds() {
+
+    var firstname = document.getElementById("firstname").value;
+
+    var lastname = document.getElementById("lastname").value;
+
+    var badgeID = document.getElementById("badgeID").value;
+
+    var fullname = firstname + " " + lastname;
+
+// if the fullname is greater then 20 and lest then 2 the name will be invalid
+    if (fullname.length >20 || fullname.length <2) {
+    
+          document.getElementById("UATlogin").innerHTML = "First and last name has invalid number of characters";
+    } 
+// if the badge ID is greater then 1000 and less then 2 then the badge is invalid
+    else if (badgeID > 1000 || badgeID <2) {
+        document.getElementById("UATlogin").innerHTML = "Badge ID is invalid";
+    }
+// if the fullname and the badge id is right then access will be granted and and alert will pop up
+    else {
+        alert("Access Granted " + fullname );
+        
+    }
+}
