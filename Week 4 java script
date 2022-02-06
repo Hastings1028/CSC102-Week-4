@@ -1,3 +1,4 @@
+
 function checkCreds() {
 
     var firstname = document.getElementById("firstname").value;
@@ -20,6 +21,6 @@ function checkCreds() {
 // if the fullname and the badge id is right then access will be granted and and alert will pop up
     else {
         alert("Access Granted " + fullname );
-        
+        location.replace("tables.html");  
     }
 }
